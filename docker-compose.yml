@@ -22,3 +22,7 @@ services:
     network_mode: "bridge"
     environment:
       - SSH_ENABLE_ROOT=true
+  loadbalancer:
+    build:
+      context: .
+      dockerfile: Dockerfile
